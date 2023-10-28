@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: black;
+    width: 1366px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.firstScreen {
+    height: 700px;
+    top: -7px;
+}
+
+.navigationFirstScreen {
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+    margin:30px 10px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.mainMenu {
+    display: flex;
+    align-items: center;
+}
+
+.mainMenu ul {
+    display: flex;
+    gap:10px;
+}
+
+.mainMenu ul li{
+    display: inline-block;
+}
+
+.mainMenu ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.mainMenu ul li a:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.descriptionFirstScreen {
+    display: flex;
+    margin-top: 100px;
+}
+
+.descriptionImage {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.descriptionFirstScreen img {
+    margin: 30px 0;
+    height: 350px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.description {
+    width: 50%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description h2 {
+    font-size:48px;
+    font-weight: 500;
+}
+
+.descriptionText p{
+    margin: 15px 0;
+}
+
+.button,
+.projectButton,
+.formButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 225px;
+    height: 65px;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button:hover,
+.projectButton:hover,
+.formButton:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px blueviolet;
+    color:blueviolet;
+    scale: 125%;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.descriptionAboutMe,
+.howIWork {
+    width: 540px;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.descriptionAboutMe p,
+.howIWork p {
+    margin-top: 50px;
+}
+
+.descriptionAboutSkills {
+    height: 150px;
+    padding: 0 200px;
+    background: mediumpurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blockSkills {
+    display: flex;
+    width: 150px;
+    height: 50px;
+}
+
+.imageSkills img{
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.descriptionSkills {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionSkills h3,
+.descriptionSkills p{
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.descriptionSkills h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.descriptionSkills p {
+    margin-top: 5px;
+}
+
+.mySkillsDescription {
+    margin: 100px 0;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    height: 450px;
+}
+
+.myPhoto {
+    width: 50%;
+}
+
+.myPhoto img {
+    height: 350px;
+    width: auto;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+.skills {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 150px;
+}
+
+.skills h2 {
+    padding-right: 235px;
+    margin-bottom: 50px;
+}
+
+.progressBar {
+    height: 50px;
+}
+
+.thirdScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    border-radius: 20px;
+}
+
+.video:hover {
+    box-shadow: 0 0 15px 10px blueviolet;
+    transition: 0.5s;
+}
+
+.fourthScreen {
+    margin: 100px 0;
+}
+
+.fourthScreen h2 {
+    text-align: center;
+}
+
+.projectPosition {
+    height: 400px;
+    margin: 100px 100px;
+    padding: 0 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    background: mediumpurple;
+}
+
+.projectBlock {
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectBlock img {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 0 15px 5px black;
+}
+
+.projectBlock2,
+.projectBlock2 img {
+    height: 400px;
+    width: 500px;
+}
+
+.projectButton {
+    height: 125px;
+    width: 350px;
+    transform: translateY(-100px);
+    border-radius: 20px;
+    background: blueviolet;
+    color: white;
+}
+
+.projectButton:hover {
+    color: blueviolet;
+    background: white;
+}
+
+.listIcons {
+    height: 100px;
+    margin: 0 400px 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.iconBlock,
+.iconBlock img{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.iconBlock img:hover {
+    scale: 125%;
+}
+
+.lastScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formsText {
+    width: 540px;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form1 {
+    height: 50px;
+    width: 255px;
+}
+
+.form2 {
+    width: 540px;
+    height: 175px;
+}
+
+.form1,
+.form2 {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+}
+
+.form1:hover,
+.form2:hover {
+    box-shadow: 5px 5px 15px 5px blueviolet;
+}
+
+.formButton {
+    width: 190px;
+    height: 55px;
+    margin: 50px 0 100px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    height: 150px;
+    background: mediumpurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.Author {
+    display: inline-block;
+    line-height: 30px;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 22px;
+}
+
+.socialMediaBlock,
+.socialMediaBlock img{
+    width: 50px;
+    height: 50px;
+}

@@ -8,7 +8,7 @@
 
 body {
     background: black;
-    width: 1366px;
+    width: 100%;
 }
 
 .no-wrap {
@@ -16,8 +16,8 @@ body {
 }
 
 .firstScreen {
-    height: 700px;
     top: -7px;
+    margin-bottom: 100px;
 }
 
 .navigationFirstScreen {
@@ -148,9 +148,14 @@ h2 {
 }
 
 .descriptionAboutSkills {
+    display: flex;
+    justify-content: center;
     height: 150px;
-    padding: 0 200px;
     background: mediumpurple;
+}
+
+.descriptionAboutSkills__first,
+.descriptionAboutSkills__second {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,11 +199,7 @@ h2 {
     padding: 0 150px;
     display: flex;
     align-items: center;
-    height: 450px;
-}
 
-.myPhoto {
-    width: 50%;
 }
 
 .myPhoto img {
@@ -250,7 +251,8 @@ h2 {
     text-align: center;
 }
 
-.projectPosition {
+.projectPosition_first,
+.projectPosition_second {
     height: 400px;
     margin: 100px 100px;
     padding: 0 50px;
@@ -298,10 +300,10 @@ h2 {
 
 .listIcons {
     height: 100px;
-    margin: 0 400px 100px;
     display: flex;
     gap: 30px;
     justify-content: center;
+    align-items: center;
 }
 
 .iconBlock,
@@ -386,4 +388,240 @@ footer {
 .socialMediaBlock img{
     width: 50px;
     height: 50px;
+}
+
+@media (max-width: 1300px) {
+    .navigationFirstScreen {
+        gap: 100px;
+    }
+
+    .descriptionFirstScreen img {
+        width: 450px;
+    }
+
+    .description {
+        width: 500px;
+    }
+
+    .description {
+
+    }
+}
+
+@media (max-width: 1100px) {
+    .navigationFirstScreen {
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 50px;
+    }
+
+    .description {
+        width: 600px;
+        text-align: center;
+    }
+
+    .button_block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .descriptionImage {
+        justify-content: center;
+    }
+
+    .descriptionFirstScreen img {
+        width: 100vh;
+    }
+
+    .descriptionFirstScreen{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .mySkillsDescription {
+        flex-direction: column-reverse;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .skills {
+        width: 500px;
+        padding: 0;
+    }
+
+    .skills h2 {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .skills {
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .myPhoto img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .projectPosition_first {
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+
+    }
+
+    .projectPosition_first,
+    .projectPosition_second {
+        background: none;
+    }
+
+    .projectPosition_first {
+        margin-bottom: 0;
+    }
+
+    .projectPosition_second {
+        margin-top: 0;
+    }
+
+    .projectBlock img {
+        box-shadow: 0 0 15px 10px mediumpurple;
+    }
+
+    footer {
+        justify-content: center;
+        gap: 300px;
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 980px) {
+    .descriptionAboutSkills {
+        flex-direction: column;
+        gap: 30px;
+        height: 200px;
+    }
+
+    footer {
+        gap: 175px;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigationFirstScreen {
+        align-items: end;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .mainMenu ul{
+        flex-direction: column;
+    }
+
+    .descriptionFirstScreen img {
+        width: 400px;
+        height: auto;
+    }
+
+    .description {
+        width: 500px;
+    }
+
+    .myPhoto {
+        height: 250px;
+    }
+
+    .myPhoto img{
+        height: 250px;
+    }
+
+    .howIWork {
+        width: 300px;
+    }
+
+    .video {
+        width: 360px;
+    }
+
+    .projectBlock img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .projectButton {
+        width: 250px;
+        height: 90px;
+        transform: translateY(-50px);
+    }
+
+    .iconBlock,
+    .iconBlock img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .formsText {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form1 {
+        width: 200px;
+        height: 35px;
+    }
+
+    .form2 {
+        width: 300px;
+    }
+
+    .formButton {
+        width: 150px;
+        height: 50px;
+    }
+
+    footer {
+        height: 125px;
+        gap: 100px;
+        padding: 0 25px;
+    }
+
+    .socialMediaBlock,
+    .socialMediaBlock img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .Author {
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .descriptionAboutSkills {
+        height: 600px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+
+    .descriptionAboutSkills__first,
+    .descriptionAboutSkills__second {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .progressBar {
+        height: 40px;
+    }
+
+    .video {
+        width: 260px;
+        height: auto;
+    }
+
+    footer {
+        gap: 50px;
+        padding: 0 15px;
+    }
 }

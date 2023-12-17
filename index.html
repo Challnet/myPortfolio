@@ -5,16 +5,51 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--    bootstrap-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+<!--    fonts-->
+    <!--    white theme-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <!--dark theme-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+<!--    my style-->
     <link rel="stylesheet" href="style.css">
     <title>CHAllNET</title>
 </head>
 <body>
+<!--    custom cursor-->
+<div class="cursor"></div>
+
+    <section class="main parallax">
+        <h1>PORTFOLIO</h1>
+        <h2>designed by Challnet</h2>
+        <div class="front_layer">
+            <img src="images/parallax1.jpg" alt="1">
+            <img src="images/parallax2.jpg" alt="2">
+            <img src="images/parallax3.jpg" alt="3">
+            <img src="images/parallax4.png" alt="4">
+            <img src="images/parallax5.jpg" alt="5">
+            <img src="images/parallax6.jpg" alt="6">
+        </div>
+        <div class="back_layer">
+            <img src="images/back1.jpg" alt="1">
+            <img src="images/back2.png" alt="2">
+            <img src="images/back3.jpg" alt="3">
+        </div>
+    </section>
+
     <div class="firstScreen">
-        <div class="navigationFirstScreen">
-            <h1 id="mainMenu">PORTFOLIO</h1>
+        <div class="navigationFirstScreen" id="mainMenu">
+            <button class="button_color">
+                &#128293;
+            </button>
             <nav class="mainMenu">
                 <ul>
                     <li><a class="no-wrap" href="#mainMenu">MAIN MENU</a></li>
@@ -24,6 +59,23 @@
                     <li><a class="no-wrap" href="#feedback">FEEDBACK</a></li>
                 </ul>
             </nav>
+            <div class="burger-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+<!--burger menu-->
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li><a class="no-wrap" href="#mainMenu">MAIN MENU</a></li>
+                    <li><a class="no-wrap" href="#aboutMe">ABOUT ME</a></li>
+                    <li><a class="no-wrap" href="#process">PROCESS</a></li>
+                    <li><a class="no-wrap" href="#projects">PROJECTS</a></li>
+                    <li><a class="no-wrap" href="#feedback">FEEDBACK</a></li>
+                </ul>
+            </div>
+
         </div>
         <div class="descriptionFirstScreen">
             <div class="descriptionImage">
@@ -48,73 +100,89 @@
                 <h2 id="aboutMe">About me</h2>
                 <p>
                     My name is Alexandr Kushnir<br>
-                    I'm 20<br>
+                    I'm 21<br>
                     I study at EKTU<br>
                     I like programming and learning English<br>
                     I'm learning web-dev and this is my first web-page
                 </p>
             </div>
         </div>
-        <div class="descriptionAboutSkills">
-            <div class="descriptionAboutSkills__first">
-                <div class="blockSkills">
-                    <div class="imageSkills">
-                        <img src="images/C%23image.png" alt="c#">
+
+
+        <div class="container">
+            <div class="descriptionAboutSkills">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 mt-4 d-flex align-items-center justify-content-center">
+                        <div class="blockSkills">
+                            <div class="imageSkills">
+                                <img src="images/C%23image.png" alt="c#">
+                            </div>
+                            <div class="descriptionSkills">
+                                <h3 class="countSkills">5+</h3>
+                                <p class="nameSkills">projects</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="descriptionSkills">
-                        <h3 class="countSkills">5+</h3>
-                        <p class="nameSkills">projects</p>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4 col-12 mt-4 d-flex align-items-center justify-content-center">
+                        <div class="blockSkills">
+                            <div class="imageSkills">
+                                <img src="images/blender_image.png" alt="blender">
+                            </div>
+                            <div class="descriptionSkills">
+                                <h3 class="countSkills">100+</h3>
+                                <p class="nameSkills">hours</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="blockSkills">
-                    <div class="imageSkills">
-                        <img src="images/blender_image.png" alt="blender">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 mt-4 d-flex align-items-center justify-content-center">
+                        <div class="blockSkills">
+                            <div class="imageSkills">
+                                <img src="images/JS_image.png" alt="JavaScript">
+                            </div>
+                            <div class="descriptionSkills">
+                                <h3 class="countSkills">2+</h3>
+                                <p class="nameSkills">projects</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="descriptionSkills">
-                        <h3 class="countSkills">100+</h3>
-                        <p class="nameSkills">hours</p>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 mt-4 d-flex align-items-center justify-content-center">
+                        <div class="blockSkills">
+                            <div class="imageSkills">
+                                <img src="images/android_png.png" alt="androidStudio">
+                            </div>
+                            <div class="descriptionSkills">
+                                <h3 class="countSkills">10+</h3>
+                                <p class="nameSkills">hours</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="blockSkills">
-                    <div class="imageSkills">
-                        <img src="images/JS_image.png" alt="JavaScript">
+                    <div class="col-xl-2 col-lg-6 col-md-4 col-sm-6 col-12 mb-4 mt-4 d-flex align-items-center justify-content-center">
+                        <div class="blockSkills">
+                            <div class="imageSkills">
+                                <img src="images/photoshop_image.png" alt="photoshop">
+                            </div>
+                            <div class="descriptionSkills">
+                                <h3 class="countSkills">100+</h3>
+                                <p class="nameSkills">projects</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="descriptionSkills">
-                        <h3 class="countSkills">2+</h3>
-                        <p class="nameSkills">projects</p>
-                    </div>
-                </div>
-            </div>
-            <div class="descriptionAboutSkills__second">
-                <div class="blockSkills">
-                    <div class="imageSkills">
-                        <img src="images/android_png.png" alt="androidStudio">
-                    </div>
-                    <div class="descriptionSkills">
-                        <h3 class="countSkills">10+</h3>
-                        <p class="nameSkills">hours</p>
-                    </div>
-                </div>
-                <div class="blockSkills">
-                    <div class="imageSkills">
-                        <img src="images/photoshop_image.png" alt="photoshop">
-                    </div>
-                    <div class="descriptionSkills">
-                        <h3 class="countSkills">100+</h3>
-                        <p class="nameSkills">projects</p>
-                    </div>
-                </div>
-                <div class="blockSkills">
-                    <div class="imageSkills">
-                        <img src="images/youtube_image.png" alt="Youtube">
-                    </div>
-                    <div class="descriptionSkills">
-                        <h3 class="countSkills">200+</h3>
-                        <p class="nameSkills">projects</p>
+                    <div class="col-xl-2 col-lg-6 col-md-4 col-sm-6 col-12 mb-4 mt-4 d-flex align-items-center justify-content-center">
+                        <div class="blockSkills">
+                            <div class="imageSkills">
+                                <img src="images/youtube_image.png" alt="Youtube">
+                            </div>
+                            <div class="descriptionSkills">
+                                <h3 class="countSkills">200+</h3>
+                                <p class="nameSkills">projects</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="mySkills">
             <div class="mySkillsDescription">
                 <div class="skills">
@@ -183,6 +251,13 @@
             </div>
         </div>
     </div>
+
+    <section class="data-php--input">
+        <h2>DATA.PHP</h2>
+        <button class="button-data-php" onclick="fetchData()">CLICK</button>
+        <div class="content-data-php" id="data-container"></div>
+    </section>
+
     <div class="lastScreen">
         <div class="howIWork">
             <h2 id="feedback">
@@ -190,19 +265,19 @@
             </h2>
             <p>Let me know if you want a modern website for your goals.</p>
         </div>
-        <form action="#">
+        <form id="myForm" action="ajax.php" method="post">
             <div class="forms">
                 <div class="formsText">
                     <label>
-                        <input type="text" placeholder="Your firstname" class="form1">
+                        <input type="text" placeholder="Your firstname" class="form1" name="user_name">
                     </label>
                     <label>
-                        <input type="text" placeholder="Your email" class="form1">
+                        <input type="text" placeholder="Your email" class="form1" name="user_email">
                     </label>
                 </div>
                 <div class="formsTextArea">
                     <label>
-                        <textarea placeholder="Message" class="form2"></textarea>
+                        <textarea placeholder="Message" class="form2" name="user_message"></textarea>
                     </label>
                 </div>
                 <label>
@@ -210,8 +285,11 @@
                 </label>
             </div>
         </form>
+        <div id="success-message" style="display:none;">
+        Ваша заявка успешно отправлена.
+        </div>
     </div>
-    <footer>
+    <footer class="footer">
         <div class="Author">
             <h3>Kushnir Alexandr</h3>
             <p>(c)2023. All rights depend.</p>
@@ -228,5 +306,7 @@
             </a>
         </div>
     </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
